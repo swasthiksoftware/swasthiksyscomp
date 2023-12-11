@@ -1,0 +1,54 @@
+body{
+background-color:#00FA9A;
+margin:20%;
+}
+#title{
+text-align:center;
+font-family:arial;
+font-size:10vh;
+text-shadow: 5px 5px 10px white;
+color:navy;
+}
+img{
+display:inline-block;
+width:100%;
+border:2px solid lime;
+}
+small{
+font-family:helvetica;
+font-size:18px;
+color:navy;
+text-indent:20px;
+margin-top:8px;
+}
+#caption{
+font-size:18px;
+font-family:helvetica;
+color:darkgreen;
+}
+div#tribute-data{
+background-color:palegreen;
+box-shadow: 20px 20px 20px gray;
+font-family:Georgia;
+padding:25px 25px;
+margin:12px;
+margin-top:40px;
+color:seageeen;
+}
+h1.title-JRD{
+font-size:35px;
+font-family:copperplate;
+color:white;
+text-align:center;
+text-shadow: 3px 3px 6px black;
+}
+#tribute-link{
+text-decoration:none;
+background-color:greenyellow;
+padding:14px 16px;
+border:2px solid lime;
+}
+#tribute-link:hover{
+background-color:seagreen;
+color:white;
+}

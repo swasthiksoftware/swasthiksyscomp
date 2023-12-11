@@ -1,0 +1,88 @@
+body{
+background-color:lavender;
+font-family:verdana;
+text-align:center;
+font-size:18px;
+color:navy;
+}
+.header{
+background-color:indigo;
+border:2px solid purple;
+width:500px;
+margin:auto;
+padding:10px;
+box-shadow: 5px 5px 10px 15px rgba(0,0,0,0.25);
+}
+.header h1{
+font-family:copperplate;
+color:white;
+text-shadow:3px 3px 7px 15px black;
+}
+form{
+background-color:aliceblue;
+max-width:500px;
+margin:50px auto;
+padding:30px 20px;
+box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+border:3px solid dodgerblue;
+border-radius:30px;
+}
+.form-control{
+text-align:left;
+margin-bottom:25px;
+}
+.form-control label{
+display:block;
+margin-bottom:10px;
+}
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control select,
+.form-control textarea{
+border: 1px solid slateblue;
+border-radius:4px;
+font-family:arial;
+font-size:18px;
+color:mediumblue;
+padding:10px;
+width:90%;
+display:block;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"]{
+display:inline-block;
+width:auto;
+}
+.form-control input[type="reset"],
+.form-control input[type="submit"]{
+background-color:mediumslateblue;
+border:2px solid darkgreen;
+border-radius:4px;
+font-family:arial;
+font-size:22px;
+padding:8px 12px;
+width:100%;
+margin-top:10px;
+
+margin-bottom:10px;
+}
+.form-control input[type="reset"]:hover{
+background-color:navy;
+color:white;
+}
+.form-control input[type="submit"]:hover{
+background-color:navy;
+color:white;
+}
+input[type="text"]:focus{
+border:2px solid indigo;
+background-color:lightcyan;
+}
+input[type="email"]:focus{
+border:2px solid purple;
+background-color:linen;
+}
+textarea:focus{
+border:3px solid mediumblue;
+background-color: mintcream;
+}
