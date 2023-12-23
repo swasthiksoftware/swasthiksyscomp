@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>dropdown menu</title>
+<style>
+#dropbtn{
+color:blue;
+font-family:arial;
+font-size:22px;
+background-color:powderblue;
+padding:14px 16px;
+border:none;
+cursor:pointer;
+}
+#dropbtn:hover{
+background-color:slateblue;
+color:white;
+}
+#dropdown{
+position:relative;
+display:inline-block;
+}
+#dropdown-content{
+display:none;
+position:absolute;
+background-color:dodgerblue;
+min-width:160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index:1;
+}
+#dropdown-content a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;
+}
+#dropdown-content a:hover{
+background-color:slateblue;
+color:white;
+}
+#dropdown:hover #dropdown-content{
+display:block;
+}
+</style>
+</head>
+<body>
+<div id="dropdown">
+<button id="dropbtn">Language</button>
+<div id="dropdown-content">
+<a href="#">C</a>
+<a href="#">C++</a>
+<a href="#">JAVA</a>
+<a href="#">PYTHON</a>
+</div>
+</div>
+</body>
+</html>

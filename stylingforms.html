@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>styling forms</title>
+<style>
+#d1{
+background-color:#f2f2f2;
+padding: 20px;
+margin: 20px;
+border-radius:10px;
+width:50%;
+}
+input[type="button"]{
+width:120px;
+margin-left:35px;
+display:block;
+background-color:lightblue;
+color:dodgerblue;
+border-color:slateblue;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+border-radius:5px;
+}
+input[type="button"]:hover{
+background-color:powderblue;
+color:white;
+}
+input[type="text"]{
+align:center;
+width:50%;
+padding:12px 20px;
+margin: 8px 0;
+display:inline-block;
+border:2px solid lightgray;
+background-color:aliceblue;
+font-family:helvetica;
+font-size:22px;
+color:slateblue;
+border-radius:5px;
+box-sizing:border-box;
+background-image:url('images/searchicon.png');
+background-image-width:10px;
+background-image-height:10px;
+background-position:10px 10px;
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+}
+input[type="text"]:hover{
+border-color:powderblue;
+}
+input[type="text"]:focus{
+background-color:hotpink;
+}
+input[type="submit"]{
+align:center;
+width:50%;
+background-color:dodgerblue;
+color:white;
+padding: 14px 20px;
+margin: 8px 0;
+border-radius:5px;
+cursor:pointer;
+border:none;
+font-family:verdana;
+font-size:22px;
+font-weight:bold;
+}
+input[type="submit"]:hover{
+background-color:slateblue;
+border: 1px solid darkblue;
+}
+#country{
+background-color:ghostwhite;
+border: 2px solid lavender;
+border-radius:4px;
+width:50%;
+padding:14px 20px;
+font-family:helvetica;
+font-size:22px;
+}
+option: hover{
+background-color:indigo;
+color:white;
+}
+
+</style>
+</head>
+<body>
+<div id="d1">
+<form name="f1">
+<input type="text" name="search" placeholder="Search..." />
+<input type="text" name="fname" placeholder="first name" />
+<input type="text" name="lname" placeholder="last name" />
+<select id="country" name="country">
+<option value="australia">Australia</option>
+<option value="canada">Canada</option>
+<option value="america">America</option>
+<option value="africa">Africa</option>
+</select>
+<input type="submit" name="submit" value="submit" />
+</form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>table styles</title>
+<style>
+#tab,th,td{
+
+}
+th{
+height:50px;
+
+}
+td{
+
+height:50px;
+}
+#tab{
+width:50%;
+border-collapse:collapse;
+}
+th,td{
+text-align:left;
+vertical-align:bottom;
+padding:15px;
+border-bottom:2px solid gray;
+}
+#tab .row:nth-child(even){
+background-color:powderblue;
+}
+#tab .row:nth-child(odd){
+background-color:aliceblue;
+}
+#tab .row:hover{
+background-color:dodgerblue;
+}
+caption{
+font-family:arial;
+font-size:32px;
+color:tomato;
+caption-side:bottom;
+}
+</style>
+</head>
+<body>
+<div style="overflow-x:auto;">
+<table id="tab">
+<caption>Student Details</caption>
+<tr class="row">
+<th>REGNO</th>
+<th>NAME</th>
+<th>DEPARTMENT</th>
+</tr>
+<tr class="row">
+<td>12903</td>
+<td>Kumar</td>
+<td>Electrical</td>
+</tr>
+<tr class="row">
+<td>12345</td>
+<td>Dilip Kumar</td>
+<td>Electronics</td>
+</tr>
+<tr class="row">
+<td>23654</td>
+<td>Shankar</td>
+<td>Mechanical</td>
+</tr>
+<tr class="row">
+<td>23564</td>
+<td>Hari Prasad</td>
+<td>Civil</td>
+</tr>
+<tr class="row">
+<td>45623</td>
+<td>Kumara Guru</td>
+<td>IT</td>
+</tr><tr class="row">
+<td>54332</td>
+<td>Ganesh</td>
+<td>Computer</td>
+</tr>
+<tr class="row">
+<td>34004</td>
+<td>Kannan</td>
+<td>Communication</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

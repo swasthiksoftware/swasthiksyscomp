@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="loginstyle.css">
+<style>
+.modal{
+display:none;
+position:fixed;
+z-index:1;
+left:0;
+top:0;
+
+overflow:auto;padding-top:60px;
+
+}
+.close{
+position:absolute;
+right:25px;
+padding:8px 12px;
+top:0;
+color:gray;
+font-size:32px;
+font-weight:bold;
+}
+.close:hover, .close:focus{
+background-color:crimson;
+color:white;
+cursor:pointer;
+}
+.container{
+margin:5px auto;
+width:80%;
+}
+.animate{
+-webkit-animation:animatezoom 0.6s;
+animation:animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom{
+from{-webkit-transform: scale(0)}
+to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom{
+from{transform: scale(0)}
+to {transform: scale(1)}
+}
+</style>
+<script language="javascript">
+
+</script>
+</head>
+<body>
+<button onclick="document.getElementById('id1').style.display='block' ">Login</button>
+<div id="id1" class="modal">
+<span onclick="document.getElementById('id1').style.display='none'" class="close" title="close modal">&times;</span>
+<form name="login" action="login.jsp" method="post">
+<div class="container animate">
+<label for="username">UserName</label>
+<input type="text" id="username" name="username" placeholder="Enter username" />
+<label for="password">Password</label>
+<input type="password" name="password" placeholder="Enter password" />
+<label for="remember">
+<input type="checkbox" id="remember" name="remember" />Remember Me</label>
+<input type="reset" name="reset" value="reset">
+<input type="submit" name="submit" value="submit">
+<button name="cancel" type="button" class="cancelbutton" onclick="document.getElementById('id1').style.display='none'">CANCEL</button>
+<span class="psw">Forgot <a href="#">Password?</span>
+</div>
+</form>
+</div>
+</body>
+</html>

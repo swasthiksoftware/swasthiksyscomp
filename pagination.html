@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>pagination</title>
+<meta charset="UTF-8">
+<style>
+#page{
+display:inline-block;
+}
+#page a{
+color:navy;
+float:left;
+padding:8px 16px;
+text-decoration:none;
+transition: background-color .3s;
+border:1px solid #ddd;
+margin: 0px 4px;
+}
+#page a:hover{
+background-color:dodgerblue;
+border: 1px solid black;
+border-radius:3px;
+
+}
+#page a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#page a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div id="page">
+<a href="#">&laquo;</a>
+<a href="#">1</a>
+<a href="#">2</a>
+<a href="#">3</a>
+<a href="#">4</a>
+<a href="#">5</a>
+<a href="#">6</a>
+<a href="#">&raquo;</a>
+</div>
+</body>
+</html>
