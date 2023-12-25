@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+* {
+box-sizing:border-box;
+}
+#clock{
+width:75%;
+height:60%;
+padding:20px;
+background-color:#4DB8FF;
+border-radius:20px;
+margin:auto;
+}
+#datebox{
+border: 2px solid #597ADE;
+background-color:#F8F8FF;
+text-align:center;
+margin:5px;
+border-radius:20px;
+}
+#dd, #mm, #yyyy{
+font-family:helvetica;
+font-size:14vh;
+color:#00FF7F;
+font-weight:bolder;
+background-color:#defade;
+}
+h1{
+font-family:arial;
+font-size:14vh;
+color:#8A2BE2;
+display:inline-block;
+}
+#header{
+font-family:copperplate;
+font-size:14vh;
+color:#6A5ACD;
+text-align:center;
+margin:auto;
+}
+#timebox{
+border: 2px solid #59BDDE;
+background-color:#FFCCFF;
+font-family:monospace;
+font-size:16vh;
+color:#FF4500;
+text-align:center;
+margin:5px;
+border-radius:20px;
+}
+#h, #m, #s {
+background-color:#FFF0F5;
+border:1px solid: #F08080;
+}
+#days{
+font-family:arial;
+font-size:10vh;
+color:#FFD700;
+background-color:#FFF9D9;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+margin:0;
+padding:0;
+}
+</style>
+<script>
+const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const days=["Sunday","Monday","tuesday","Wednesday","Thursday","Friday","Saturday"];
+function dispDate(){
+const d=new Date();
+
+document.getElementById("dd").innerHTML=d.getDate();
+document.getElementById("mm").innerHTML=months[d.getMonth()];
+document.getElementById("yyyy").innerHTML=d.getFullYear();
+document.getElementById("days").innerHTML=days[d.getDay()];
+}
+function dispTime(){
+
+const today=new Date();
+let h=today.getHours();
+let m=today.getMinutes();
+let s=today.getSeconds();
+
+
+m=checkTime(m);
+s=checkTime(s);
+
+document.getElementById("h").innerHTML=h;
+document.getElementById("m").innerHTML=m;
+document.getElementById("s").innerHTML=s;
+
+setTimeout(dispTime,1000);
+}
+function checkTime(i){
+if(i<10){i="0"+i};
+return i;
+}
+</script>
+</head>
+<body onload="dispDate();dispTime()">
+<h1 id="header">Digital Clock</h1>
+<div id="clock">
+<div id="datebox"><h1>Date: </h1><span id="dd"></span>&nbsp;&nbsp&nbsp;<span id="mm"></span>&nbsp;&nbsp;&nbsp;<span id="yyyy"></span><h2 id="days"></h2></div>
+<div id="timebox"><span id="h"></span>&nbsp;:&nbsp;<span id="m"></span>&nbsp;:&nbsp;<span id="s"></span></div>
+</div>
+</body>
+</html>
